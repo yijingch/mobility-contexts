@@ -60,6 +60,30 @@
             )
 -------------------------------------------------
 
+3. `aggr_per_subm_year.py`
+- aggregate documents by submission
+- input folder: `/data/raw/comment-from-2012`, `/data/raw/submission-from-2012`
+- this version skipped four large subreddits `["politics", "the_donald", "chapotraphouse", "neoliberal"]`
+
+-------------------------------------------------
+    output folder structure:
+      data
+        |--- topic-doc
+        |     |--- 2012
+        |     |      |--- subr1
+        |     |      |     |--- subr1_subm1_2012.txt
+        |     |      |     |--- subr1_subm2_2012.txt
+        |     |      |     |--- ...
+        |     |      |     |--- subr1_submN_2012.txt
+        |     |      |--- subr2
+        |     |      |--- ...
+        |     |      |--- subrN
+        |     |--- 2013
+        |     |--- ...
+        |     |--- 2020
+-------------------------------------------------
+
+
 
 ##### Index/descriptive files:
 
