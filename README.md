@@ -61,7 +61,7 @@
 -------------------------------------------------
 
 3. `aggr_per_subm_year.py`
-- aggregate documents by submission
+- aggregate documents by submission by year
 - input folder: `/data/raw/comment-from-2012`, `/data/raw/submission-from-2012`
 - this version skipped four large subreddits `["politics", "the_donald", "chapotraphouse", "neoliberal"]`
 
@@ -83,6 +83,32 @@
         |     |--- 2020
 -------------------------------------------------
 
+4. `doc_clean_tokenize.py`
+- clean and tokenize documents
+  1. cleaned: URL, non-english characters, user and subreddit name, nltk stopwords
+  2. limited vocab size, i.e., only kept top frequency words for each subreddit in each year (default retaining percentage: 80%)
+  3. break strings into pieces and stored in csv files
+  4. 
+
+-------------------------------------------------
+    output folder structure:
+      data
+        |--- topic-token
+        |     |--- 2012
+        |     |      |--- subr1
+        |     |      |     |--- subr1_subm1_2012.csv
+        |     |      |     |--- subr1_subm2_2012.csv
+        |     |      |     |--- ...
+        |     |      |     |--- subr1_submN_2012.csv
+        |     |      |--- subr2
+        |     |      |--- ...
+        |     |      |--- subrN
+        |     |--- 2013
+        |     |--- ...
+        |     |--- 2020
+-------------------------------------------------
+
+5.
 
 
 ##### Index/descriptive files:
