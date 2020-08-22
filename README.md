@@ -7,6 +7,7 @@
 1. `crawl_reddit_fixstart_by_year.py`
 - crawl submissions and comments from subreddits listed in `index/left-right-labels.csv` within a specified time interval into
 - e.g., `python3 aggr_per_subm_year.py --start_year=2012 --end_year=2021`
+- JSON data sample: `data-snippets/subm_neoliberal_2012.json`
 
 -------------------------------------------------
     output folder structure:
@@ -64,6 +65,7 @@
 - aggregate documents by submission by year
 - input folder: `/data/raw/comment-from-2012`, `/data/raw/submission-from-2012`
 - this version skipped four large subreddits `["politics", "the_donald", "chapotraphouse", "neoliberal"]`
+- txt data sample: `anarchism_zzx32_2012.txt`
 
 -------------------------------------------------
     output folder structure:
@@ -88,6 +90,7 @@
   1. cleaned: URL, non-english characters, user and subreddit name, nltk stopwords
   2. limited vocab size, i.e., only kept top frequency words for each subreddit in each year (default retaining percentage: 80%)
   3. break strings into pieces and stored in .csv files
+- csv data sample: `anarchocommunism_adtetf_2019.csv`
 
 -------------------------------------------------
     output folder structure:
@@ -106,6 +109,7 @@
         |     |--- ...
         |     |--- 2020
 -------------------------------------------------
+
 
 5. `mallet_per_year.py`
 - train MALLET topic model on a number of documents (min length specified)
