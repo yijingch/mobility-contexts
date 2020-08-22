@@ -65,7 +65,7 @@
 - aggregate documents by submission by year
 - input folder: `/data/raw/comment-from-2012`, `/data/raw/submission-from-2012`
 - this version skipped four large subreddits `["politics", "the_donald", "chapotraphouse", "neoliberal"]`
-- txt data sample: `anarchism_zzx32_2012.txt`
+- txt data sample: `data-snippets/anarchism_zzx32_2012.txt`
 
 -------------------------------------------------
     output folder structure:
@@ -90,7 +90,7 @@
   1. cleaned: URL, non-english characters, user and subreddit name, nltk stopwords
   2. limited vocab size, i.e., only kept top frequency words for each subreddit in each year (default retaining percentage: 80%)
   3. break strings into pieces and stored in .csv files
-- csv data sample: `anarchocommunism_adtetf_2019.csv`
+- csv data sample: `data-snippets/anarchocommunism_adtetf_2019.csv`
 
 -------------------------------------------------
     output folder structure:
