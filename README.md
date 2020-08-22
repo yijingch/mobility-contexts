@@ -2,6 +2,11 @@
 
 ## Pre-processing / Analysis Documentations
 
+
+##### Data files:
+
+For privacy conerns we don't publish data files in this public repository. Feel free to reach out to yijingch at umich dot edu if you have any inquiries.
+
 ##### Code files:
 
 1. `crawl_reddit_fixstart_by_year.py`
