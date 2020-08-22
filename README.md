@@ -87,8 +87,7 @@
 - clean and tokenize documents
   1. cleaned: URL, non-english characters, user and subreddit name, nltk stopwords
   2. limited vocab size, i.e., only kept top frequency words for each subreddit in each year (default retaining percentage: 80%)
-  3. break strings into pieces and stored in csv files
-  4. 
+  3. break strings into pieces and stored in .csv files
 
 -------------------------------------------------
     output folder structure:
@@ -108,7 +107,8 @@
         |     |--- 2020
 -------------------------------------------------
 
-5.
+5. `mallet_per_year.py`
+- train MALLET topic model on a number of documents (min length specified)
 
 
 ##### Index/descriptive files:
