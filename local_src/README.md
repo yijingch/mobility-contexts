@@ -1,4 +1,4 @@
-# mobility-contexts
+# mobility-contexts - local codes documentation
 
 ## Pre-processing / Analysis Documentations
 
@@ -11,7 +11,7 @@ For privacy conerns we don't publish data files in this public repository. Feel 
 
 1. `crawl_reddit_fixstart_by_year.py`
 - crawl submissions and comments from subreddits listed in `index/left-right-labels.csv` within a specified time interval into
-- e.g., `python3 aggr_per_subm_year.py --start_year=2012 --end_year=2021`
+- e.g., `python3 crawl_reddit_fixstart_by_year.py --start_year=2012 --end_year=2021`
 - JSON data sample: `data-snippets/subm_neoliberal_2012.json`
 
 -------------------------------------------------
